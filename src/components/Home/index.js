@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logotitle from "../../assets/images/logo-n.png";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
+import Logo from "./Logo";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -23,11 +24,11 @@ const Home = () => {
     "r",
     ".",
   ];
-  //   useEffect(() => {
-  //     return setTimeout(() => {
-  //       setLetterClass("text-animate-hover");
-  //     }, 4000);
-  //   }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 4000);
+  }, []);
   return (
     <div className="container home-page">
       <div className="text-zone">
@@ -60,6 +61,7 @@ const Home = () => {
           See resume
         </a>
       </div>
+      <Logo></Logo>
     </div>
   );
 };

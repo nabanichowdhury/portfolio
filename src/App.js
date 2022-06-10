@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Granim from "granim";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
+import About from "./components/About";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout></Layout>}>
           <Route index element={<Home></Home>} />
           <Route path="contact" element={<Contact></Contact>} />
+          <Route path="about" element={<About></About>} />
         </Route>
       </Routes>
     </div>
