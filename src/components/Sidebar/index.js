@@ -9,6 +9,7 @@ import {
   faHome,
   faUser,
   faLinkedin,
+  faSuitcase,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
@@ -30,6 +31,14 @@ const Sidebar = () => {
           to="/about"
         >
           <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="project-link"
+          to="/project"
+        >
+          <FontAwesomeIcon icon={faSuitcase}></FontAwesomeIcon>
         </NavLink>
         <NavLink
           exact="true"
