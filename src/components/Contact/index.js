@@ -16,22 +16,26 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_4c3540n",
-        refForm.current,
-        "rWglRqvQX5QBrXCnd"
-      )
-      .then(
-        () => {
-          alert("Message sent successfully");
-          window.location.reload(false);
-        },
-        () => {
-          alert("Failed to send message");
-        }
-      );
+    emailjs.init("rWglRqvQX5QBrXCnd");
+    const params = {
+      sendername: e.target.name.value,
+      replyto: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+    const serviceId = "service_j9fetua";
+    const templateId = "template_f31welk";
+    emailjs.send(serviceId, templateId, params).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Email sent successfully");
+        refForm.current.reset();
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        alert("Email not sent");
+      }
+    );
   };
 
   return (

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Loader from "react-loaders";
-import LogoN from "../../../assets/images/trima3.png";
+import LogoN from "../../../assets/images/naba.jpeg";
 import "./index.scss";
 
 const Logo = () => {

@@ -1,33 +1,34 @@
 import React from "react";
-import conventional from "../../assets/images/CONVENTIONAL .png";
-import PhoneKhojo from "../../assets/images/PHONE KHOJO.png";
-import wareHouse from "../../assets/images/WAREHOUSE WEBSITE.png";
+
+import shoeWeb from "../../assets/images/shoeweb.png";
+import donate from "../../assets/images/donationweb.png";
+import bookCollection from "../../assets/images/bookCollection.png";
 
 const Project = () => {
   const projects = [
     {
       id: 1,
-      name: "Conventional Center",
-      img: conventional,
-      desc: "This website is made up of css framework bootstrap",
-      live: "https://stupefied-ptolemy-d45e77.netlify.app/",
-      code: "https://github.com/Porgramming-Hero-web-course/convention-center-nabanichowdhury",
+      name: "Shoe Management Website",
+      img: shoeWeb,
+      desc: "This website is made up using Google firebase authentication system,MongoDB and nodejs to add and create data",
+      live: "https://shoe-front-gilt.vercel.app/",
+      code: "https://github.com/nabanichowdhury/shoe-management-frontend",
     },
     {
       id: 2,
-      name: "Phone Hunter Website",
-      img: PhoneKhojo,
-      desc: "This website is made up using Java script api",
-      live: "https://stoic-hawking-63aa18.netlify.app/",
-      code: "https://github.com/programming-hero-web-course2/phone-hunter-nabanichowdhury",
+      name: "Donation Website",
+      img: donate,
+      desc: "This website is made up using Google firebase authentication system,MongoDB and nodejs to add and create data",
+      live: "https://donation-client-side.vercel.app/",
+      code: "https://github.com/nabanichowdhury/donation-client-side",
     },
     {
       id: 3,
-      name: "Ware House Website",
-      img: wareHouse,
+      name: "Book Collection Website",
+      img: bookCollection,
       desc: "This website is made up using Google firebase authentication system,MongoDB and nodejs to add and create data",
-      live: "https://full-stack-warehouse-react.web.app/",
-      code: "https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-nabanichowdhury",
+      live: "https://book-collect-client.vercel.app/",
+      code: "https://github.com/nabanichowdhury/book-collect-client",
     },
   ];
   return (

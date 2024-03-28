@@ -52,9 +52,11 @@ const Home = () => {
             idx={20}
           />
         </h1>
-        <h2>Frontend Developer/Coder</h2>
+        <h2>
+          Data Structure and Algorithms / Web Development / Machine Learning
+        </h2>
         <a
-          href="https://drive.google.com/file/d/1_WCNcT3_teusReJ7b6LyhpkdNoZHgb-i/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Eq3bedlPAb0TWQ71dCAABWrmBaJNokPi/view?usp=sharing"
           target="_blank"
           className="flat-button"
         >
